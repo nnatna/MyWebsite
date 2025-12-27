@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../nav/nav_style.css">
+    <link rel="stylesheet" href="/Detail/Detail.css">
+</head>
+
+<body>
+    <nav class="fixed-top" id="navbar"></nav>
+    <div class="container my-5 ">
+        <div class="row g-5 mt-5">
+            <div class="col-lg-6">
+                <div class="main-img-container shadow-sm ">
+                    <img id="mainImage" src="/Images/P1.png" alt="Laptop Main Image">
+                </div>
+                <div class="d-flex gap-3 justify-content-center flex-wrap">
+                    <img class="thumb-img  active" src="/Images/P1.png" onclick="changeImage(this.src, this)">
+                    <img class="thumb-img " src="/Images/P1_01.png" onclick="changeImage(this.src, this)">
+                    <img class="thumb-img " src="/Images/P1_02.png" onclick="changeImage(this.src, this)">
+                    <img class="thumb-img " src="/Images/P1_03.png" onclick="changeImage(this.src, this)">
+                    <img class="thumb-img " src="/Images/P1_04.png" onclick="changeImage(this.src, this)">
+                    <img class="thumb-img " src="/Images/P1_05.png" onclick="changeImage(this.src, this)">
+                    <img class="thumb-img " src="/Images/P1_06.png" onclick="changeImage(this.src, this)">
+                    <img class="thumb-img " src="/Images/P1_07.png" onclick="changeImage(this.src, this)">
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <h1 class="fw-bold mb-2"></h1>
+                <div class="d-flex align-items-center mb-3">
+                    <div class="text-warning me-2">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                    </div>
+                    <span>4.5</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"/><path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"/><path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"/><path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"/><path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28"/></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#ff9d00" fill-opacity="0" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"/><path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28"/></svg>
+                    <span class="text-muted small">(324 Reviews)</span>
+                    <span class="ms-3 badge bg-success product-badge">In Stock</span>
+                </div>
+
+                <div class="mb-4">
+                    <span class="price-tag">$4199.00</span>
+                    <span class="old-price ms-2"></span>
+                </div>
+
+                <p class="text-muted mb-4 lead">
+                    Dominate Windows 11 Pro gaming with up to Intel® Core™ Ultra 9 processor 275HX and up to NVIDIA® GeForce RTX™ 5090 Laptop GPU with a 175W max TGP.
+                </p>
+
+                <div class="mb-4">
+                    <label class="fw-bold mb-2 d-block">Choose Storage</label>
+                    <div class="btn-group rounded-3 w-100" role="group-st">
+                        <input type="radio" class="btn-check" name="storage" id="st1" checked>
+                        <label class="btn btn-outline-secondary" for="st1">SSD M.2 1T</label>
+                        <input type="radio" class="btn-check" name="storage" id="st2">
+                        <label class="btn btn-outline-secondary" for="st2">SSD M.2 2T</label>
+                        <input type="radio" class="btn-check" name="storage" id="st3">
+                        <label class="btn btn-outline-secondary" for="st3">SSD M.2 3T</label>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <label class="fw-bold mb-2 d-block">Choose Memory</label>
+                    <div class="btn-group rounded-3 w-100" role="group-ram">
+                        <input type="radio" class="btn-check" name="memory" id="ram1" checked>
+                        <label class="btn btn-outline-secondary" for="ram1">32GB</label>
+                        <input type="radio" class="btn-check" name="memory" id="ram2">
+                        <label class="btn btn-outline-secondary" for="ram2">64GB</label>
+                    </div>
+                </div>
+
+                <div class="row g-2 mb-4 text-center">
+                    <div class="col-4">
+                        <div class="spec-box">
+                            <i class="bi bi-cpu fs-4 text-primary"></i>
+                            <small class="d-block mt-1 text-muted">CPU</small>
+                            <strong class="small">Intel® Core™ Ultra 9 processor 275HX</strong>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="spec-box">
+                            <i class="bi bi-memory fs-4 text-primary"></i>
+                            <small class="d-block mt-1 text-muted">GPU</small>
+                            <strong class="small">NVIDIA® GeForce RTX™ 5090</strong>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="spec-box">
+                            <i class="bi bi-battery-charging fs-4 text-primary"></i>
+                            <small class="d-block mt-1 text-muted">Display</small>
+                            <strong class="small">16-inch 2.5K 240Hz/3ms</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-3 align-items-center">
+                    <div class="col-md-3 col-4">
+                        <div class="input-group quantity-grp">
+                            <button class="btn" type="button" onclick="decrement(this)">-</button>
+                            <input type="text" class="form-control qty-input" value="1" readonly>
+                            <button class="btn" type="button" onclick="increment(this)">+</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-8">
+                        <button class="btn btn-outline-secondary w-100" onclick="addToCart()">
+                        <i class="bi bi-bag-plus rounded-3 me-2"></i> Add to Cart
+                    </button>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn-pay p-2 rounded-3 w-100" onclick="window.location.href='../payment/payment.html'">
+                        Pay
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <ul class="nav nav-tabs mb-4" id="productTabs" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" id="desc-tab" data-bs-toggle="tab" data-bs-target="#desc">Description</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="spec-tab" data-bs-toggle="tab" data-bs-target="#specs">Technical Specs</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" id="review-tab" data-bs-toggle="tab" data-bs-target="#reviews">(324 Reviews)</button>
+                    </li>
+                </ul>
+                <div class="tab-content p-4 border rounded-4 shadow-sm">
+                    <div class="tab-pane fade show active" id="desc">
+                        <h5 class="fw-bold">Redefining Portability and Power</h5>
+                        <p>The 2025 Strix SCAR 16 offers the very best Windows 11 Pro gaming experience, featuring up to Intel® Core™ Ultra 9 processor 275HX and up to NVIDIA® GeForce RTX™ 5090 Laptop GPU with NVIDIA Max-Q technologies, including Advanced
+                            Optimus. This killer hardware is complemented with up to 64GB of 5600MHz DDR5 RAM and 4TB of PCIe 4.0 storage, with the memory slots upgradable to 6400MHz DDR5 RAM and SSD slots both offering full support for PCIe Gen 5, ensuring
+                            that you always have the edge on your competition.</p>
+                        <ul class="mt-3">
+                            <li class="mb-2">Windows 11 Pro OS</li>
+                            <li class="mb-2">Up to Intel® Core™ Ultra 9 processor 275HX</li>
+                            <li class="mb-2">Up to NVIDIA® GeForce RTX™ 5090 Laptop GPU</li>
+                            <li class="mb-2">Up to 64GB DDR5 Memory</li>
+                            <li class="mb-2">Up to 4TB PCIe 4.0 In RAID 0</li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="specs">
+                        <table class="table table-borderless">
+                            <tr>
+                                <td class="fw-bold w-25">Processor</td>
+                                <td>Intel® Core™ Ultra 9 processor 275HX (Base: ~2.7, GHz Up to 5.4 GHz Max Turbo, 24 cores (8P + 16E) / 24 threads, Intel AI Boost NPU up to ~13 TOPS)</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Display</td>
+                                <td>16-inch ROG Nebula HDR Mini LED, 2.5K (2560 × 1600) WQXGA resolution, 240 Hz refresh rate & 3 ms response, 100% DCI-P3 color, G-SYNC, Pantone validated, Dolby Vision HDR</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Ports</td>
+                                <td>2 × Thunderbolt™ 5 Type-C (with DisplayPort 2.1 + Power Delivery + G-SYNC), 3 × USB 3.2 Gen2 Type-A, 1 × HDMI 2.1 FRL, 1 × 2.5 G LAN (Ethernet), 1 × 3.5 mm combo audio jack</td>
+                            </tr>
+                            <tr>
+                                <td class="fw-bold">Weight</td>
+                                <td>~2.8 kg (~6.17 lbs)</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="reviews">
+                        <div class="d-flex align-items-start mb-4">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">JD</div>
+                            <div class="ms-3">
+                                <h6 class="fw-bold mb-0">John Doe</h6>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"/><path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"/><path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"/><path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"/><path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#ff9d00" fill-opacity="0" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"/><path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28"/></svg>
+                                <p class="text-muted small">The best laptop I've ever owned. Battery life is unbelievable.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start">
+                            <div class="bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 45px; height: 45px;">SA</div>
+                            <div class="ms-3">
+                                <h6 class="fw-bold mb-0">Sarah Adams</h6>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"/><path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"/><path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"/><path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"/><path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="#ff9d00" fill-opacity="0" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z"/><path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28"/></svg>
+                                <p class="text-muted small">Screen is gorgeous. A bit heavy, but the performance makes up for it.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="notification" class="alert alert-success shadow-lg">
+        <div class="d-flex align-items-center">
+            <i class="bi bi-check-circle-fill me-3 fs-4"></i>
+            <div>
+                <strong class="d-block">Success!</strong>
+                <small>Item added to your shopping cart.</small>
+            </div>
+        </div>
+    </div>
+
+    <div id="notification" class="alert alert-success shadow-lg">
+        <i class="bi bi-check-circle-fill me-2"></i> Added to cart successfully!
+    </div>
+
+    <script src="/Detail/Detail.js"></script>
+</body>
+
+</html>

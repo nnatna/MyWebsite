@@ -1,0 +1,208 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url(/fonts/Poppins-Regular.ttf);
+}
+
+:root {
+    --bg: #EDEDED;
+    --accent: #FF2D55;
+    --text: #000000;
+    --muted: rgba(0, 0, 0, 0.85);
+    --btn-hover: rgba(212, 6, 43, 0.993);
+    --fg-clr: #161616;
+    --bg-clr: #FFFFFF;
+    --bg-1-clr: #7C7C7C;
+    --bl-clr: #161616be;
+    --bg-2-clr: #EDEDED;
+    --y-clr: #FF9D00;
+    --yw-clr: #eff1c5e1;
+    --g-clr: #34C759;
+    --b-clr: #3700FF
+}
+
+* {
+    font-family: 'MyFont';
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    color: var(--text-dark);
+}
+
+.hero-section {
+    padding: 2rem 0;
+}
+
+.category-sidebar {
+    background: var(--bg-light);
+    border-radius: 12px;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.category-sidebar h5 {
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    color: #6c757d;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.category-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-list li {
+    margin-bottom: 0.5rem;
+}
+
+.category-list a {
+    text-decoration: none;
+    color: var(--text-dark);
+    display: block;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.category-list a:hover {
+    background-color: #fff;
+    color: var(--accent);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transform: translateX(5px);
+}
+
+.carousel {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item img {
+    height: 450px;
+    object-fit: cover;
+    background-color: #eee;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    padding: 1.5rem;
+    bottom: 20%;
+}
+
+a.item-link {
+    padding: 8px;
+    color: var(--fg-clr);
+}
+
+a.item-link:hover {
+    color: var(--accent);
+    transform: translateY(-5px);
+}
+
+section {
+    padding: 4rem 0;
+    margin: 0;
+}
+
+.card {
+    justify-content: start;
+    background-color: var(--bg-clr);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+.card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card img:hover {
+    filter: brightness(80%);
+}
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.card .card-title,
+.card .card-text {
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.card-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.cart-heart {
+    display: flex;
+    gap: 10px;
+}
+
+.cart-heart a {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cart-heart a:hover,
+.cart-heart svg:hover {
+    color: var(--accent);
+    transform: scale(1.1);
+}
+
+.contact .icon-link {
+    border-radius: 50%;
+    padding: 8px;
+    background-color: var(--fg-clr);
+    transition: var(--transition);
+}
+
+.contact .icon-link:hover {
+    background-color: var(--accent);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.icon-link svg {
+    color: #fff;
+}
+
+@media (max-width: 991.98px) {
+    .carousel-item img {
+        height: 300px;
+    }
+    .category-sidebar {
+        margin-top: 2rem;
+    }
+}

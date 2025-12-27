@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+:root {
+    --bg: #EDEDED;
+    --accent: #FF2D55;
+    --text: #000000;
+    --muted: rgba(0, 0, 0, 0.85);
+    --btn-hover: rgba(212, 6, 43, 0.993);
+    --fg-clr: #161616;
+    --bg-clr: #FFFFFF;
+    --bg-1-clr: #7C7C7C;
+    --bl-clr: #161616be;
+    --bg-2-clr: #EDEDED;
+    --y-clr: #FF9D00;
+    --yw-clr: #eff1c5e1;
+    --g-clr: #34C759;
+    --b-clr: #3700FF
+}
+
+* {
+    font-family: 'MyFont';
+    box-sizing: border-box
+}
+
+body {
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+form {
+    width: 400px;
+    background-color: var(--bg-clr);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    border-radius: 12px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid var(--bg-1-clr);
+    padding: 0.5rem 1rem;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: var(--bg-1-clr);
+    box-shadow: 0 0 3px var(--fg-clr);
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--accent);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    color: #fff;
+    background-color: var(--btn-hover);
+}
+
+button[type="button"]:hover {
+    background-color: var(--bg-2-clr);
+    color: var(--fg-clr);
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0;
+    color: #888;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.divider span {
+    padding: 0 10px;
+    font-size: 14px;
+}
