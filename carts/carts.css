@@ -185,9 +185,6 @@ input[type='checkbox'] {
     transform: scale(1.1);
 }
 
-
-/* Sidebar Item Appearance */
-
 .sidebar-item {
     animation: slideIn 0.3s ease-out;
     margin-bottom: 12px;
@@ -206,16 +203,28 @@ input[type='checkbox'] {
     }
 }
 
-@media (max-width: 992px) {
-    .main-wrapper {
-        flex-direction: column;
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 95%;
     }
-    .sidebar-container {
-        width: 100%;
-        position: static;
+    img {
         height: auto;
+        max-width: 100%;
     }
-    .sticky-sidebar {
-        height: 400px;
+}
+
+@media (max-width: 768px) {
+    .sidebar-container {
+        display: none;
+    }
+    .hero-section {
+        margin-top: 20px !important
+    }
+    .btn-pay {
+        width: 50% !important;
+    }
+    .card-title {
+        font-size: 0.95rem;
+        padding-right: 0 !important;
     }
 }

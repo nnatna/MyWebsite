@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+:root {
+    --bg: #EDEDED;
+    --accent: #FF2D55;
+    --text: #000000;
+    --muted: rgba(0, 0, 0, 0.85);
+    --btn-hover: rgba(212, 6, 43, 0.993);
+    --fg-clr: #161616;
+    --bg-clr: #FFFFFF;
+    --bg-1-clr: #7C7C7C;
+    --bl-clr: #161616be;
+    --bg-2-clr: #EDEDED;
+    --y-clr: #FF9D00;
+    --yw-clr: #eff1c5e1;
+    --g-clr: #34C759;
+    --b-clr: #3700FF
+}
+
+* {
+    font-family: 'MyFont';
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    color: var(--text-dark);
+}
+
+h1 {
+    color: var(--accent);
+    font-size: 200px;
+    font-weight: bolder;
+}
+
+.about-hero {
+    margin-top: 5rem;
+}
+
+.about-image {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.about-store h2,
+.team h2 {
+    color: var(--accent);
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+
+.about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.icon-link {
+    border-radius: 50%;
+    padding: 8px;
+    background-color: var(--fg-clr);
+    transition: var(--transition);
+}
+
+.icon-link:hover {
+    background-color: var(--accent);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.icon-link svg {
+    color: #fff;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    justify-content: start;
+    background-color: var(--bg-clr);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    overflow: hidden;
+}
+
+@media (max-width:576px) {
+    h1 {
+        font-size: 80px;
+    }
+    .about-image {
+        height: 200px
+    }
+    .icon-link {
+        padding: 5px;
+    }
+    .about-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+}

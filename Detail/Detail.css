@@ -154,6 +154,105 @@ nav {
     padding: 0 !important;
 }
 
+.modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.chat-history {
+    height: 350px;
+    overflow-y: auto;
+    padding: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.message {
+    max-width: 85%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.message.received {
+    align-self: flex-start;
+    background-color: #f1f0f0;
+    color: #333;
+}
+
+.message.sent {
+    align-self: flex-end;
+    background-color: #0d6efd;
+    color: white;
+}
+
+.chat.rounded-pill {
+    border: 1px solid #dee2e6;
+    padding: 8px 20px;
+    flex-grow: 1;
+    outline: none;
+}
+
+.chat.rounded-pill:focus {
+    border-color: #0d6efd;
+}
+
+.send {
+    background: none;
+    border: none;
+    color: var(--fg-clr);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: transform 0.2s ease, color 0.2s ease;
+    cursor: pointer;
+}
+
+.send svg {
+    transition: fill 0.2s ease;
+}
+
+.send:hover {
+    color: var(--accent);
+    transform: scale(1.15);
+}
+
+.send:active {
+    transform: scale(0.9);
+}
+
+.file-input-label {
+    cursor: pointer;
+    color: var(--fg-clr);
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.file-input-label:hover {
+    color: var(--accent);
+}
+
+#fileInput {
+    display: none;
+}
+
+.btn-chat {
+    border: none;
+    height: 32px;
+    width: 32px
+}
+
+.btn-chat:hover {
+    color: var(--accent);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 45, 85, 0.3);
+}
+
 .btn-pay {
     width: 100%;
     background-color: var(--accent);
@@ -212,5 +311,18 @@ nav {
     to {
         transform: translateX(0);
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+    .spec-box {
+        min-height: 180px;
     }
 }

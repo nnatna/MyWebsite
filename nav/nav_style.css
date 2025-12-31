@@ -94,3 +94,9 @@ form button[type='submit']:hover {
     background-color: var(--bg-1-clr);
     transform: translateY(-1px);
 }
+
+@media (max-width: 768px) {
+    .navbar-link {
+        padding: 15px;
+    }
+}

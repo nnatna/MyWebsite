@@ -28,7 +28,7 @@
                     <div class="item-pro">
                         <input class="item-checkbox" type="checkbox" id="p1" onclick="updateOrder(this)">
                         <div class="card">
-                            <div class="row g-0">
+                            <div class="row g-0" id="P1">
                                 <div class="col-md-3">
                                     <img src="../Images/P1.png" class="img-card" alt="Laptop">
                                 </div>
@@ -90,7 +90,7 @@
                     <!-- Item 2 -->
                     <div class="item-pro">
                         <input class="item-checkbox" type="checkbox" id="p2" onclick="updateOrder(this)">
-                        <div class="card">
+                        <div class="card" id="P2">
                             <div class="row g-0">
                                 <div class="col-md-3">
                                     <img src="../Images/P2.jpg" class="img-card" alt="Monitor">
@@ -153,7 +153,7 @@
                     <!-- Item 3 -->
                     <div class="item-pro">
                         <input class="item-checkbox" type="checkbox" id="p3" onclick="updateOrder(this)">
-                        <div class="card">
+                        <div class="card" id="P3">
                             <div class="row g-0">
                                 <div class="col-md-3">
                                     <img src="../Images/P3.jpg" class="img-card" alt="Monitor">
@@ -214,7 +214,7 @@
                     </div>
 
                     <!-- Item 4 -->
-                    <div class="item-pro">
+                    <div class="item-pro" id="P4">
                         <input class="item-checkbox" type="checkbox" id="p4" onclick="updateOrder(this)">
                         <div class="card">
                             <div class="row g-0">
@@ -279,7 +279,7 @@
                     <!-- Item 5 -->
                     <div class="item-pro">
                         <input class="item-checkbox" type="checkbox" id="p5" onclick="updateOrder(this)">
-                        <div class="card">
+                        <div class="card" id="5">
                             <div class="row g-0">
                                 <div class="col-md-3">
                                     <img src="../Images/P5.jpg" class="img-card" alt="Monitor">
@@ -342,7 +342,7 @@
                     <!-- Item 6 -->
                     <div class="item-pro">
                         <input class="item-checkbox" type="checkbox" id="p6" onclick="updateOrder(this)">
-                        <div class="card">
+                        <div class="card" id="P6">
                             <div class="row g-0">
                                 <div class="col-md-3">
                                     <img src="../Images/P6.png" class="img-card" alt="Monitor">
@@ -405,7 +405,7 @@
                     <!-- Item 7 -->
                     <div class="item-pro">
                         <input class="item-checkbox" type="checkbox" id="p7" onclick="updateOrder(this)">
-                        <div class="card">
+                        <div class="card" id="P7">
                             <div class="row g-0">
                                 <div class="col-md-3">
                                     <img src="../Images/P7.jpg" class="img-card" alt="Monitor">
@@ -468,7 +468,7 @@
                     <!-- Item 8 -->
                     <div class="item-pro">
                         <input class="item-checkbox" type="checkbox" id="p8" onclick="updateOrder(this)">
-                        <div class="card">
+                        <div class="card" id="P8">
                             <div class="row g-0">
                                 <div class="col-md-3">
                                     <img src="../Images/P8.jpg" class="img-card" alt="Monitor">
@@ -562,6 +562,16 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="mobile-bottom-checkout d-lg-none shadow-lg border-top bg-white fixed-bottom p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <small class="text-secondary d-block mb-0">Total Amount</small>
+                <span id="mobile-total-price" class="h5 fw-bold text-danger mb-0">$0.00</span>
+            </div>
+            <button onclick="checkout()" class="btn-pay btn-lg px-4">Check Now</button>
         </div>
     </div>
     <script src="carts.js"></script>

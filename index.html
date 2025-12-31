@@ -3,257 +3,284 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>AURA</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/home/home_style.css">
-    <link rel="stylesheet" href="/nav/nav_style.css">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/index.html">AURA</a>
 
-    <nav class="fixed-top" id="navbar"></nav>
-    <main class="container hero-section" id="home">
-        <div class="row g-4 mt-5">
-            <div class="col-lg-9 order-1 order-lg-1">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Products</a>
+                        <ul class="dropdown-menu border-0 shadow-sm">
+                            <li><a class="dropdown-item" href="#">Phones</a></li>
+                            <li><a class="dropdown-item" href="#">Laptops</a></li>
+                            <li><a class="dropdown-item" href="#">Desktops</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/payed/payed.html">Payed</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about/about.html">About</a></li>
+                </ul>
+
+                <form class="d-flex" role="search">
+                    <div class="input-group gap-1">
+                        <input class="form-control rounded-5" type="search" placeholder="Search products...">
+                        <button class="btn rounded-5 px-4 " type="submit">Search</button>
+                    </div>
+                </form>
+
+                <ul class="d-flex justify-content-start align-items-center list-unstyled m-0 gap-2 navbar-link">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../carts/carts.html" title="Cart">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="currentColor" d="M2.5 2a.5.5 0 0 0 0 1h.246a.5.5 0 0 1 .48.363l1.586 5.55A1.5 1.5 0 0 0 6.254 10h4.569a1.5 1.5 0 0 0 1.393-.943l1.474-3.686A1 1 0 0 0 12.762 4H4.448l-.261-.912A1.5 1.5 0 0 0 2.746 2zm4 12a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m4 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3"/></svg>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="Favorite/Favorite.html" title="Favorite ">
+                            <svg xmlns="http://www.w3.org/2000/svg " width="32 " height="32 " viewBox="0 0 24 24 "><path fill="currentColor " d="M12 20.325q-.35 0-.712-.125t-.638-.4l-1.725-1.575q-2.65-2.425-4.788-4.812T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325
+                            0 2.5.562t2 1.538q.825-.975 2-1.537t2.5-.563q2.35 0 3.925 1.575T22 8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.275.275-.637.4t-.713.125 "/></svg>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-secondary rounded-5 px-4 " id="login " href="../login/login.html ">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container hero-section " id="home ">
+        <div class="row g-4 mt-5 ">
+            <div class="col-lg-9 order-1 order-lg-1 ">
                 <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
                         <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
                         <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
                     </div>
-                    <div class="carousel-inner">s
+                    <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="../Images/banner.jpg" class="d-block w-100" alt="Latest Smartphones">
-
                         </div>
                         <div class="carousel-item">
                             <img src="../Images/banner1.jpg" class="d-block w-100" alt="New Laptops">
-
                         </div>
                         <div class="carousel-item">
-                            <img src="../Images/banner.jpg" class="d-block w-100" alt="Accessories">
+                            <img src="../Images/banner2.jpg" class="d-block w-100" alt="Accessories">
                         </div>
                     </div>
                 </div>
-                <h5 class="mt-4 fw-semibold text-secondary">PC Parts</h5>
-                <div class="bg-white mt-3 rounded-3 p-3 border border-secondary-subtle">
-                    <ul class="row row-cols-auto g-3 justify-content-center align-items-center list-unstyled m-0">
-                        <li class="m-0">
-                            <a href="" class="item-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="currentColor" stroke-width="1.5">
-                                        <path d="M7 10c0-1.414 0-2.121.44-2.56C7.878 7 8.585 7 10 7h4c1.414 0 2.121 0 2.56.44c.44.439.44 1.146.44 2.56v4c0 1.414 0 2.121-.44 2.56c-.439.44-1.146.44-2.56.44h-4c-1.414 0-2.121 0-2.56-.44C7 16.122 7 15.415 7 14z" opacity="0.5" />
-                                        <path d="M4 12c0-3.771 0-5.657 1.172-6.828S8.229 4 12 4s5.657 0 6.828 1.172S20 8.229 20 12s0 5.657-1.172 6.828S15.771 20 12 20s-5.657 0-6.828-1.172S4 15.771 4 12Z" />
-                                        <path stroke-linecap="round" d="M4 12H2m20 0h-2M4 9H2m20 0h-2M4 15H2m20 0h-2m-8 5v2m0-20v2M9 20v2M9 2v2m6 16v2m0-20v2" opacity="0.5" />
+                <h5 class="mt-4 fw-semibold text-secondary ">PC Parts</h5>
+                <div class="bg-white mt-3 rounded-3 p-3 border border-secondary-subtle ">
+                    <ul class="row row-cols-auto g-3 justify-content-center align-items-center list-unstyled m-0 ">
+                        <li class="m-0 ">
+                            <a href=" " class="item-link " title="CPU">
+                                <svg xmlns="http://www.w3.org/2000/svg " width="32 " height="32 " viewBox="0 0 24 24 ">
+                                    <g fill="none " stroke="currentColor " stroke-width="1.5 ">
+                                        <path d="M7 10c0-1.414 0-2.121.44-2.56C7.878 7 8.585 7 10 7h4c1.414 0 2.121 0 2.56.44c.44.439.44 1.146.44 2.56v4c0 1.414 0 2.121-.44 2.56c-.439.44-1.146.44-2.56.44h-4c-1.414 0-2.121 0-2.56-.44C7 16.122 7 15.415
+                            7 14z " opacity="0.5 " />
+                                        <path d="M4 12c0-3.771 0-5.657 1.172-6.828S8.229 4 12 4s5.657 0 6.828 1.172S20 8.229 20 12s0 5.657-1.172 6.828S15.771 20 12 20s-5.657 0-6.828-1.172S4 15.771 4 12Z " />
+                                        <path stroke-linecap="round " d="M4 12H2m20 0h-2M4 9H2m20 0h-2M4 15H2m20 0h-2m-8 5v2m0-20v2M9 20v2M9 2v2m6 16v2m0-20v2 " opacity="0.5 " />
                                     </g>
                                 </svg>
                             </a>
                         </li>
-                        <li class="m-0">
-                            <a href="" class="item-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                                        <path d="M2 21V3m0 2h18a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2.26M7 17v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3" />
-                                        <circle cx="16" cy="11" r="2" />
-                                        <circle cx="8" cy="11" r="2" />
+                        <li class="m-0 ">
+                            <a href=" " class="item-link " title="GPU">
+                                <svg xmlns="http://www.w3.org/2000/svg " width="32 " height="32 " viewBox="0 0 24 24 ">
+                                    <g fill="none " stroke="currentColor " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 ">
+                                        <path d="M2 21V3m0 2h18a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2.26M7 17v3a1 1 0 0 0 1 1h5a1 1 0 0 0 1-1v-3 " />
+                                        <circle cx="16 " cy="11 " r="2 " />
+                                        <circle cx="8 " cy="11 " r="2 " />
                                     </g>
                                 </svg>
                             </a>
                         </li>
-                        <li class="m-0">
-                            <a href="" class="item-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
-                                    <g fill="currentColor" fill-rule="evenodd" transform="translate(0 2)">
-                                        <path fill-rule="nonzero" d="M2 6a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1zm13 2v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1m1-3V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v3c0 .601.271 1.133.69 1.5C.271 6.867 0 7.399 0 8v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8c0-.601-.271-1.133-.689-1.5c.418-.367.689-.899.689-1.5" />
-                                        <circle cx="4.5" cy="9.5" r="1.5" />
-                                        <circle cx="4.5" cy="3.5" r="1.5" />
-                                        <path d="M12 8h1v3h-1zm-2 0h1v3h-1zm2-6h1v3h-1zm-2 0h1v3h-1z" />
+                        <li class="m-0 ">
+                            <a href=" " class="item-link " title="Storage">
+                                <svg xmlns="http://www.w3.org/2000/svg " width="32 " height="32 " viewBox="0 0 16 16 ">
+                                    <g fill="currentColor " fill-rule="evenodd " transform="translate(0 2) ">
+                                        <path fill-rule="nonzero " d="M2 6a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1zm13 2v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1m1-3V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v3c0
+                            .601.271 1.133.69 1.5C.271 6.867 0 7.399 0 8v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8c0-.601-.271-1.133-.689-1.5c.418-.367.689-.899.689-1.5 " />
+                                        <circle cx="4.5 " cy="9.5 " r="1.5 " />
+                                        <circle cx="4.5 " cy="3.5 " r="1.5 " />
+                                        <path d="M12 8h1v3h-1zm-2 0h1v3h-1zm2-6h1v3h-1zm-2 0h1v3h-1z " />
                                     </g>
                                 </svg> </a>
                         </li>
-                        <li class="m-0">
-                            <a href="" class="item-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                                    <path fill="currentColor" d="M3 7h18v10h-2v-2h-2v2h-2v-2h-2v2h-2v-2H9v2H7v-2H5v2H3zM2 5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zm9 4H5v3h6zm2 0h6v3h-6z" /></svg>
+                        <li class="m-0 ">
+                            <a href=" " class="item-link " title="Memory">
+                                <svg xmlns="http://www.w3.org/2000/svg " width="32 " height="32 " viewBox="0 0 24 24 ">
+                                    <path fill="currentColor " d="M3 7h18v10h-2v-2h-2v2h-2v-2h-2v2h-2v-2H9v2H7v-2H5v2H3zM2 5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h20a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1zm9 4H5v3h6zm2 0h6v3h-6z " /></svg>
                             </a>
                         </li>
-                        <li class="m-0">
-                            <a href="" class="item-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16">
-                                    <g fill="currentColor">
-                                        <path d="M11.5 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m-10 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zM5 3a1 1 0 0 0-1 1h-.5a.5.5 0 0 0 0 1H4v1h-.5a.5.5 0 0 0 0 1H4a1 1 0 0 0 1 1v.5a.5.5 0 0 0 1 0V8h1v.5a.5.5 0 0 0 1 0V8a1 1 0 0 0 1-1h.5a.5.5 0 0 0 0-1H9V5h.5a.5.5 0 0 0 0-1H9a1 1 0 0 0-1-1v-.5a.5.5 0 0 0-1 0V3H6v-.5a.5.5 0 0 0-1 0zm0 1h3v3H5zm6.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z" />
-                                        <path d="M1 2a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-2H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 9H1V8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6H1V5H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 2zm1 11a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1z" />
+                        <li class="m-0 ">
+                            <a href=" " class="item-link " title="Motherboard">
+                                <svg xmlns="http://www.w3.org/2000/svg " width="32 " height="32 " viewBox="0 0 16 16 ">
+                                    <g fill="currentColor ">
+                                        <path d="M11.5 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5m-10 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1zM5 3a1
+                            1 0 0 0-1 1h-.5a.5.5 0 0 0 0 1H4v1h-.5a.5.5 0 0 0 0 1H4a1 1 0 0 0 1 1v.5a.5.5 0 0 0 1 0V8h1v.5a.5.5 0 0 0 1 0V8a1 1 0 0 0 1-1h.5a.5.5 0 0 0 0-1H9V5h.5a.5.5 0 0 0 0-1H9a1 1 0 0 0-1-1v-.5a.5.5 0 0 0-1 0V3H6v-.5a.5.5 0 0 0-1 0zm0
+                            1h3v3H5zm6.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5z " />
+                                        <path d="M1 2a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-2H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 9H1V8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6H1V5H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 2zm1
+                            11a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1z " />
                                     </g>
                                 </svg> </a>
                         </li>
-                        <li class="m-0">
-                            <a href="" class="item-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                                    <path fill="currentColor" d="M4 2H2v17a2 2 0 0 0 2 2h8.1c-.07-.32-.1-.66-.1-1s.03-.68.1-1H4zm9 15c.91-1.21 2.36-2 4-2s3.09.79 4 2h1V6c0-1.11-.89-2-2-2H8a2 2 0 0 0-2 2v11zm7-11v2h-6V6zm-6 4h6v2h-6zm-7 1l3-6v4h2l-3 6v-4zm7.17 8a3 3 0 0 0-.17 1a3 3 0 0 0 3 3c1.66 0 3-1.34 3-3s-1.34-3-3-3c-1.31 0-2.42.84-2.83 2" /></svg>
+                        <li class="m-0 ">
+                            <a href=" " class="item-link " title="Power-Supply">
+                                <svg xmlns="http://www.w3.org/2000/svg " width="32 " height="32 " viewBox="0 0 24 24 ">
+                                    <path fill="currentColor " d="M4 2H2v17a2 2 0 0 0 2 2h8.1c-.07-.32-.1-.66-.1-1s.03-.68.1-1H4zm9 15c.91-1.21 2.36-2 4-2s3.09.79 4 2h1V6c0-1.11-.89-2-2-2H8a2 2 0 0 0-2 2v11zm7-11v2h-6V6zm-6 4h6v2h-6zm-7 1l3-6v4h2l-3
+                            6v-4zm7.17 8a3 3 0 0 0-.17 1a3 3 0 0 0 3 3c1.66 0 3-1.34 3-3s-1.34-3-3-3c-1.31 0-2.42.84-2.83 2 " /></svg>
                             </a>
                         </li>
-                        <li class="m-0">
-                            <a href="" class="item-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                                    <g fill="none" stroke="currentColor" stroke-width="2">
-                                        <rect width="20" height="20" x="2" y="2" rx="1" />
-                                        <rect width="20" height="20" x="2" y="2" rx="10" />
-                                        <path d="M15 9.5c.5-.333.9-1.7.5-2.5S13.333 5.667 13 5.5m1 5c1.5-2 0-3.5-2.5-5c-1.546-.927 2-1.5 4.5.5c1.875 1.5 1 2.5-2 5.5zm-5.015 3.902c-.5.333-.9 1.7-.5 2.5s2.167 1.333 2.5 1.5m-1-5c-1.5 2 0 3.5 2.5 5c1.546.927-2 1.5-4.5-.5c-1.875-1.5-1-2.5 2-5.5zm-.443-4.458c-.334-.5-1.7-.9-2.5-.5s-1.334 2.166-1.5 2.5m5-1c-2-1.5-3.5 0-5 2.5c-.928 1.546-1.5-2 .5-4.5c1.5-1.875 2.5-1 5.5 2zm3.902 5.014c.333.5 1.7.9 2.5.5s1.333-2.166 1.5-2.5m-5 1c2 1.5 3.5 0 5-2.5c.927-1.546 1.5 2-.5 4.5c-1.5 1.876-2.5 1-5.5-2z" />
-                                        <path d="M3.5 5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3Zm0 17a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3Zm17 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3Zm0-17a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3ZM12 14a2 2 0 1 0 0-4a2 2 0 0 0 0 4Z" clip-rule="evenodd" />
+                        <li class="m-0 ">
+                            <a href=" " class="item-link " title="Fan">
+                                <svg xmlns="http://www.w3.org/2000/svg " width="32 " height="32 " viewBox="0 0 24 24 ">
+                                    <g fill="none " stroke="currentColor " stroke-width="2 ">
+                                        <rect width="20 " height="20 " x="2 " y="2 " rx="1 " />
+                                        <rect width="20 " height="20 " x="2 " y="2 " rx="10 " />
+                                        <path d="M15 9.5c.5-.333.9-1.7.5-2.5S13.333 5.667 13 5.5m1 5c1.5-2 0-3.5-2.5-5c-1.546-.927 2-1.5 4.5.5c1.875 1.5 1 2.5-2 5.5zm-5.015 3.902c-.5.333-.9 1.7-.5 2.5s2.167 1.333 2.5 1.5m-1-5c-1.5 2 0 3.5 2.5 5c1.546.927-2
+                            1.5-4.5-.5c-1.875-1.5-1-2.5 2-5.5zm-.443-4.458c-.334-.5-1.7-.9-2.5-.5s-1.334 2.166-1.5 2.5m5-1c-2-1.5-3.5 0-5 2.5c-.928 1.546-1.5-2 .5-4.5c1.5-1.875 2.5-1 5.5 2zm3.902 5.014c.333.5 1.7.9 2.5.5s1.333-2.166 1.5-2.5m-5 1c2 1.5 3.5
+                            0 5-2.5c.927-1.546 1.5 2-.5 4.5c-1.5 1.876-2.5 1-5.5-2z " />
+                                        <path d="M3.5 5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3Zm0 17a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3Zm17 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3Zm0-17a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3ZM12 14a2 2 0 1 0 0-4a2 2 0 0 0
+                            0 4Z " clip-rule="evenodd " />
                                     </g>
                                 </svg>
                             </a>
                         </li>
-                        <li class="m-0">
-                            <a href="" class="item-link">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect x="2" y="4" width="20" height="8" rx="1" stroke="currentColor" stroke-width="1.5" />
-                                    <circle cx="7" cy="8" r="2.5" stroke="currentColor" stroke-width="1" />
-                                    <circle cx="17" cy="8" r="2.5" stroke="currentColor" stroke-width="1" />
-                                    <path d="M10 12V15C10 16.1046 10.8954 17 12 17H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                                    <path d="M8 12V16C8 17.6569 9.34315 19 11 19H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                                    <rect x="14" y="14" width="6" height="6" rx="1" stroke="currentColor" stroke-width="1.5" />
-                                    <circle cx="17" cy="17" r="1.5" fill="currentColor" /></svg>
+                        <li class="m-0 ">
+                            <a href=" " class="item-link " title="Liquid-Cooling">
+                                <svg width="32 " height="32 " viewBox="0 0 24 24 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                    <rect x="2 " y="4 " width="20 " height="8 " rx="1 " stroke="currentColor " stroke-width="1.5 " />
+                                    <circle cx="7 " cy="8 " r="2.5 " stroke="currentColor " stroke-width="1 " />
+                                    <circle cx="17 " cy="8 " r="2.5 " stroke="currentColor " stroke-width="1 " />
+                                    <path d="M10 12V15C10 16.1046 10.8954 17 12 17H14 " stroke="currentColor " stroke-width="1.5 " stroke-linecap="round " />
+                                    <path d="M8 12V16C8 17.6569 9.34315 19 11 19H14 " stroke="currentColor " stroke-width="1.5 " stroke-linecap="round " />
+                                    <rect x="14 " y="14 " width="6 " height="6 " rx="1 " stroke="currentColor " stroke-width="1.5 " />
+                                    <circle cx="17 " cy="17 " r="1.5 " fill="currentColor " /></svg>
                             </a>
                         </li>
-                        <li class="m-0">
-                            <a href="" class="item-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                                    <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 20h3m3 0h-3m0 0v-3m0 0h7a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2z" /></svg>
+                        <li class="m-0 ">
+                            <a href=" " class="item-link " title="Monitor">
+                                <svg xmlns="http://www.w3.org/2000/svg " width="32 " height="32 " viewBox="0 0 24 24 ">
+                                    <path fill="none " stroke="currentColor " stroke-linecap="round " stroke-linejoin="round " stroke-width="1.5 " d="M9 20h3m3 0h-3m0 0v-3m0 0h7a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2z " /></svg>
                             </a>
                         </li>
-                        <li class="m-0">
-                            <a href="" class="item-link">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4 4V20H18L21 17V4H4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
-                                    <rect x="6" y="6" width="10" height="12" rx="0.5" stroke="currentColor" stroke-width="1.2" stroke-dasharray="0.5 1" />
-                                    <path d="M18 7L21 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                                    <path d="M18 11L21 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                                    <path d="M18 15L21 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                                    <path d="M6 20V21H8V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                                    <path d="M14 20V21H16V20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-                                    <path d="M7 9H13" stroke="currentColor" stroke-width="1" stroke-linecap="round" />
-                                    <path d="M7 11H15" stroke="currentColor" stroke-width="1" stroke-linecap="round" />
-                                    <path d="M7 4V3H15V4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" /></svg>
+                        <li class="m-0 ">
+                            <a href=" " class="item-link " title="Case">
+                                <svg width="32 " height="32 " viewBox="0 0 24 24 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                    <path d="M4 4V20H18L21 17V4H4Z " stroke="currentColor " stroke-width="1.5 " stroke-linejoin="round " />
+                                    <rect x="6 " y="6 " width="10 " height="12 " rx="0.5 " stroke="currentColor " stroke-width="1.2 " stroke-dasharray="0.5 1 " />
+                                    <path d="M18 7L21 4 " stroke="currentColor " stroke-width="1.5 " stroke-linecap="round " />
+                                    <path d="M18 11L21 8 " stroke="currentColor " stroke-width="1.5 " stroke-linecap="round " />
+                                    <path d="M18 15L21 12 " stroke="currentColor " stroke-width="1.5 " stroke-linecap="round " />
+                                    <path d="M6 20V21H8V20 " stroke="currentColor " stroke-width="1.5 " stroke-linecap="round " />
+                                    <path d="M14 20V21H16V20 " stroke="currentColor " stroke-width="1.5 " stroke-linecap="round " />
+                                    <path d="M7 9H13 " stroke="currentColor " stroke-width="1 " stroke-linecap="round " />
+                                    <path d="M7 11H15 " stroke="currentColor " stroke-width="1 " stroke-linecap="round " />
+                                    <path d="M7 4V3H15V4 " stroke="currentColor " stroke-width="1.5 " stroke-linecap="round " /></svg>
                             </a>
                         </li>
-                        <li class="m-0">
-                            <a href="" class="item-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                                    <path fill="currentColor" d="M4 19q-.825 0-1.412-.587T2 17V7q0-.825.588-1.412T4 5h16q.825 0 1.413.588T22 7v10q0 .825-.587 1.413T20 19zm0-2h16V7H4zm4-1h8v-2H8zm-3-3h2v-2H5zm3 0h2v-2H8zm3 0h2v-2h-2zm3 0h2v-2h-2zm3 0h2v-2h-2zM5 10h2V8H5zm3 0h2V8H8zm3 0h2V8h-2zm3 0h2V8h-2zm3 0h2V8h-2zM4 17V7z" /></svg>
+                        <li class="m-0 ">
+                            <a href=" " class="item-link " title="Keyboard">
+                                <svg xmlns="http://www.w3.org/2000/svg " width="32 " height="32 " viewBox="0 0 24 24 ">
+                                    <path fill="currentColor " d="M4 19q-.825 0-1.412-.587T2 17V7q0-.825.588-1.412T4 5h16q.825 0 1.413.588T22 7v10q0 .825-.587 1.413T20 19zm0-2h16V7H4zm4-1h8v-2H8zm-3-3h2v-2H5zm3 0h2v-2H8zm3 0h2v-2h-2zm3 0h2v-2h-2zm3
+                            0h2v-2h-2zM5 10h2V8H5zm3 0h2V8H8zm3 0h2V8h-2zm3 0h2V8h-2zm3 0h2V8h-2zM4 17V7z " /></svg>
                             </a>
                         </li>
-                        <li class="m-0">
-                            <a href="" class="item-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                                    <path fill="currentColor" d="M12.004 21q-2.506 0-4.255-1.747Q6 17.508 6 15v-4.923h12V15q0 2.507-1.745 4.254T12.004 21M6 9.077q0-2.356 1.575-4.078T11.5 3.094v5.983zm6.5 0V3.094q2.35.183 3.925 1.905T18 9.077z" /></svg>
+                        <li class="m-0 ">
+                            <a href=" " class="item-link " title="Mouse">
+                                <svg xmlns="http://www.w3.org/2000/svg " width="32 " height="32 " viewBox="0 0 24 24 ">
+                                    <path fill="currentColor " d="M12.004 21q-2.506 0-4.255-1.747Q6 17.508 6 15v-4.923h12V15q0 2.507-1.745 4.254T12.004 21M6 9.077q0-2.356 1.575-4.078T11.5 3.094v5.983zm6.5 0V3.094q2.35.183 3.925 1.905T18 9.077z " /></svg>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
 
-            <div class="col-lg-3 order-2 order-lg-2">
-                <div class="category-sidebar">
+            <div class="col-lg-3 order-2 order-lg-2 ">
+                <div class="category-sidebar ">
                     <h5>Categories</h5>
-                    <ul class="category-list">
-                        <li><a href="#">Phones & Mobile</a></li>
-                        <li><a href="#">Laptops & Tablets</a></li>
-                        <li><a href="#">Desktops & PC Parks</a></li>
-                        <li><a href="#">Audio & Headphones</a></li>
-                        <li><a href="#">Smartwatches</a></li>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#" class="text-primary fw-bold">Special Offers %</a></li>
+                    <ul class="category-list ">
+                        <li><a href="# ">Phones & Mobile</a></li>
+                        <li><a href="# ">Laptops & Tablets</a></li>
+                        <li><a href="# ">Desktops & PC Parks</a></li>
+                        <li><a href="# ">Audio & Headphones</a></li>
+                        <li><a href="# ">Smartwatches</a></li>
+                        <li><a href="# ">Accessories</a></li>
+                        <li><a href="# " class="text-primary fw-bold ">Special Offers %</a></li>
                     </ul>
 
-                    <div class="mt-4 p-3 bg-white rounded-3 border border-secondary-subtle">
-                        <small class="text-muted d-block mb-1">Weekly Deal</small>
-                        <p class="fw-bold mb-2">ASUS Gaming</p>
-                        <p class="text-danger fw-bold mb-0">Save 10%</p>
+                    <div class="mt-4 p-3 bg-white rounded-3 border border-secondary-subtle ">
+                        <small class="text-muted d-block mb-1 ">Weekly Deal</small>
+                        <p class="fw-bold mb-2 ">ASUS Gaming</p>
+                        <p class="text-danger fw-bold mb-0 ">Save 10%</p>
                     </div>
                 </div>
             </div>
         </div>
 
         <section>
-            <h2 class="mb-4">Featured Products</h2>
-            <div class="card-group row row-cols-1 row-cols-md-4 g-4">
-                <div class="col" type="card" id="P1" id="1">
-                    <div class="card h-100 p-0">
-                        <img src="../Images/P1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold pe-5">Rog Strix Scar 16 (2025) g635</h5>
-                            <div class="card-text d-flex justify-content-start align-items-center mb-2">
-                                <p class="card-text m-0">4.5</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" fill-opacity="0" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <p class="card-text m-0">(324 Reviews)</p>
+            <h2 class="mb-4 ">Featured Products</h2>
+            <div class="card-group row row-cols-1 row-cols-md-4 g-4 ">
+                <div class="col " type="card " id="P1 " id="1 ">
+                    <div class="card h-100 p-0 ">
+                        <img src="../Images/P1.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title fw-bold pe-5 ">Rog Strix Scar 16 (2025) g635</h5>
+                            <div class="card-text d-flex justify-content-start align-items-center mb-2 ">
+                                <p class="card-text m-0 ">4.5</p>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " fill-opacity="0 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <p class="card-text m-0 ">(324 Reviews)</p>
                             </div>
-                            <div class="card-text d-flex justify-content-between align-items-center mt-2s">
-                                <h5 class="card-price m-0">$4199.00</h5>
-                                <div class="cart-heart d-flex">
-                                    <a class="nav-link" href="#" title="Cart">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
-                                            <path fill="currentColor" d="M2.5 2a.5.5 0 0 0 0 1h.246a.5.5 0 0 1 .48.363l1.586 5.55A1.5 1.5 0 0 0 6.254 10h4.569a1.5 1.5 0 0 0 1.393-.943l1.474-3.686A1 1 0 0 0 12.762 4H4.448l-.261-.912A1.5 1.5 0 0 0 2.746 2zm4 12a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m4 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3" /></svg>
+                            <div class="card-text d-flex justify-content-between align-items-center mt-2s ">
+                                <h5 class="card-price m-0 ">$4199.00</h5>
+                                <div class="cart-heart d-flex ">
+                                    <a class="nav-link " href="# " title="Cart ">
+                                        <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 16 16 ">
+                                            <path fill="currentColor " d="M2.5 2a.5.5 0 0 0 0 1h.246a.5.5 0 0 1 .48.363l1.586 5.55A1.5 1.5 0 0 0 6.254 10h4.569a1.5 1.5 0 0 0 1.393-.943l1.474-3.686A1 1 0 0 0 12.762 4H4.448l-.261-.912A1.5 1.5 0 0 0 2.746
+                            2zm4 12a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m4 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3 " /></svg>
                                     </a>
-                                    <a class="nav-link" href="#" title="Favorite">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                            <path fill="currentColor" d="M12 20.325q-.35 0-.712-.125t-.638-.4l-1.725-1.575q-2.65-2.425-4.788-4.812T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.537t2.5-.563q2.35 0 3.925 1.575T22 8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.275.275-.637.4t-.713.125" /></svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col" type="card" id="P2" value="2">
-                    <div class="card h-100 p-0">
-                        <img src="../Images/P2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold pe-5">Rog strix Z890-H</h5>
-                            <div class="card-text d-flex justify-content-start align-items-center mb-2">
-                                <p class="card-text m-0">4.7</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" fill-opacity="0" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <p class="card-text m-0">(156 Reviews)</p>
-                            </div>
-                            <div class="card-text d-flex justify-content-between align-items-center mt-2s">
-                                <h5 class="card-price m-0">$999.00</h5>
-                                <div class="cart-heart d-flex">
-                                    <a class="nav-link" href="#" title="Cart">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
-                                            <path fill="currentColor" d="M2.5 2a.5.5 0 0 0 0 1h.246a.5.5 0 0 1 .48.363l1.586 5.55A1.5 1.5 0 0 0 6.254 10h4.569a1.5 1.5 0 0 0 1.393-.943l1.474-3.686A1 1 0 0 0 12.762 4H4.448l-.261-.912A1.5 1.5 0 0 0 2.746 2zm4 12a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m4 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3" /></svg>
-                                    </a>
-                                    <a class="nav-link" href="#" title="Favorite">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                            <path fill="currentColor" d="M12 20.325q-.35 0-.712-.125t-.638-.4l-1.725-1.575q-2.65-2.425-4.788-4.812T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.537t2.5-.563q2.35 0 3.925 1.575T22 8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.275.275-.637.4t-.713.125" /></svg>
+                                    <a class="nav-link " href="# " title="Favorite ">
+                                        <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 24 24 ">
+                                            <path fill="currentColor " d="M12 20.325q-.35 0-.712-.125t-.638-.4l-1.725-1.575q-2.65-2.425-4.788-4.812T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.537t2.5-.563q2.35 0 3.925 1.575T22
+                            8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.275.275-.637.4t-.713.125 " /></svg>
                                     </a>
                                 </div>
                             </div>
@@ -261,81 +288,47 @@
                     </div>
                 </div>
 
-                <div class="col" type="card" id="P3" value="3">
-                    <div class="card h-100 p-0">
-                        <img src="../Images/P3.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold pe-5">Asus Details Radeon RX9070 xt</h5>
-                            <div class="card-text d-flex justify-content-start align-items-center mb-2">
-                                <p class="card-text m-0">4.5</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" fill-opacity="0" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <p class="card-text m-0">(126 Reviews)</p>
+                <div class="col " type="card " id="P2 " value="2 ">
+                    <div class="card h-100 p-0 ">
+                        <img src="../Images/P2.jpg " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title fw-bold pe-5 ">Rog strix Z890-H</h5>
+                            <div class="card-text d-flex justify-content-start align-items-center mb-2 ">
+                                <p class="card-text m-0 ">4.7</p>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " fill-opacity="0 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <p class="card-text m-0 ">(156 Reviews)</p>
                             </div>
-                            <div class="card-text d-flex justify-content-between align-items-center mt-2s">
-                                <h5 class="card-price m-0">$899.00</h5>
-                                <div class="cart-heart d-flex">
-                                    <a class="nav-link" href="#" title="Cart">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
-                                            <path fill="currentColor" d="M2.5 2a.5.5 0 0 0 0 1h.246a.5.5 0 0 1 .48.363l1.586 5.55A1.5 1.5 0 0 0 6.254 10h4.569a1.5 1.5 0 0 0 1.393-.943l1.474-3.686A1 1 0 0 0 12.762 4H4.448l-.261-.912A1.5 1.5 0 0 0 2.746 2zm4 12a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m4 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3" /></svg>
+                            <div class="card-text d-flex justify-content-between align-items-center mt-2s ">
+                                <h5 class="card-price m-0 ">$999.00</h5>
+                                <div class="cart-heart d-flex ">
+                                    <a class="nav-link " href="# " title="Cart ">
+                                        <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 16 16 ">
+                                            <path fill="currentColor " d="M2.5 2a.5.5 0 0 0 0 1h.246a.5.5 0 0 1 .48.363l1.586 5.55A1.5 1.5 0 0 0 6.254 10h4.569a1.5 1.5 0 0 0 1.393-.943l1.474-3.686A1 1 0 0 0 12.762 4H4.448l-.261-.912A1.5 1.5 0 0 0 2.746
+                            2zm4 12a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m4 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3 " /></svg>
                                     </a>
-                                    <a class="nav-link" href="#" title="Favorite">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                            <path fill="currentColor" d="M12 20.325q-.35 0-.712-.125t-.638-.4l-1.725-1.575q-2.65-2.425-4.788-4.812T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.537t2.5-.563q2.35 0 3.925 1.575T22 8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.275.275-.637.4t-.713.125" /></svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col" type="button" id="P4" id="card" value="4">
-                    <div class="card h-100 p-0">
-                        <img src="../Images/P4.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold pe-5">ASUS ROG Astral GEFORCE NVIDIA RTX 5090 32GB GDDR7 Graphics Card</h5>
-                            <div class="card-text d-flex justify-content-start align-items-center mb-2">
-                                <p class="card-text m-0">4.8</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" fill-opacity="0" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <p class="card-text m-0">(256 Reviews)</p>
-                            </div>
-                            <div class="card-text d-flex justify-content-between align-items-center mt-2s">
-                                <h5 class="card-price m-0">$4999.00</h5>
-                                <div class="cart-heart d-flex">
-                                    <a class="nav-link" href="#" title="Cart">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
-                                            <path fill="currentColor" d="M2.5 2a.5.5 0 0 0 0 1h.246a.5.5 0 0 1 .48.363l1.586 5.55A1.5 1.5 0 0 0 6.254 10h4.569a1.5 1.5 0 0 0 1.393-.943l1.474-3.686A1 1 0 0 0 12.762 4H4.448l-.261-.912A1.5 1.5 0 0 0 2.746 2zm4 12a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m4 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3" /></svg>
-                                    </a>
-                                    <a class="nav-link" href="#" title="Favorite">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                            <path fill="currentColor" d="M12 20.325q-.35 0-.712-.125t-.638-.4l-1.725-1.575q-2.65-2.425-4.788-4.812T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.537t2.5-.563q2.35 0 3.925 1.575T22 8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.275.275-.637.4t-.713.125" /></svg>
+                                    <a class="nav-link " href="# " title="Favorite ">
+                                        <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 24 24 ">
+                                            <path fill="currentColor " d="M12 20.325q-.35 0-.712-.125t-.638-.4l-1.725-1.575q-2.65-2.425-4.788-4.812T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.537t2.5-.563q2.35 0 3.925 1.575T22
+                            8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.275.275-.637.4t-.713.125 " /></svg>
                                     </a>
                                 </div>
                             </div>
@@ -343,81 +336,47 @@
                     </div>
                 </div>
 
-                <div class="col" type="card" id="P5" value="5">
-                    <div class="card h-100 p-0">
-                        <img src="../Images/P5.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold pe-5">Set PC Build</h5>
-                            <div class="card-text d-flex justify-content-start align-items-center mb-2">
-                                <p class="card-text m-0">4.5</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" fill-opacity="0" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <p class="card-text m-0">(156 Reviews)</p>
+                <div class="col " type="card " id="P3 " value="3 ">
+                    <div class="card h-100 p-0 ">
+                        <img src="../Images/P3.jpg " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title fw-bold pe-5 ">Asus Details Radeon RX9070 xt</h5>
+                            <div class="card-text d-flex justify-content-start align-items-center mb-2 ">
+                                <p class="card-text m-0 ">4.5</p>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " fill-opacity="0 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <p class="card-text m-0 ">(126 Reviews)</p>
                             </div>
-                            <div class="card-text d-flex justify-content-between align-items-center mt-2s">
-                                <h5 class="card-price m-0">$2299.00</h5>
-                                <div class="cart-heart d-flex">
-                                    <a class="nav-link" href="#" title="Cart">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
-                                            <path fill="currentColor" d="M2.5 2a.5.5 0 0 0 0 1h.246a.5.5 0 0 1 .48.363l1.586 5.55A1.5 1.5 0 0 0 6.254 10h4.569a1.5 1.5 0 0 0 1.393-.943l1.474-3.686A1 1 0 0 0 12.762 4H4.448l-.261-.912A1.5 1.5 0 0 0 2.746 2zm4 12a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m4 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3" /></svg>
+                            <div class="card-text d-flex justify-content-between align-items-center mt-2s ">
+                                <h5 class="card-price m-0 ">$899.00</h5>
+                                <div class="cart-heart d-flex ">
+                                    <a class="nav-link " href="# " title="Cart ">
+                                        <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 16 16 ">
+                                            <path fill="currentColor " d="M2.5 2a.5.5 0 0 0 0 1h.246a.5.5 0 0 1 .48.363l1.586 5.55A1.5 1.5 0 0 0 6.254 10h4.569a1.5 1.5 0 0 0 1.393-.943l1.474-3.686A1 1 0 0 0 12.762 4H4.448l-.261-.912A1.5 1.5 0 0 0 2.746
+                            2zm4 12a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m4 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3 " /></svg>
                                     </a>
-                                    <a class="nav-link" href="#" title="Favorite">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                            <path fill="currentColor" d="M12 20.325q-.35 0-.712-.125t-.638-.4l-1.725-1.575q-2.65-2.425-4.788-4.812T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.537t2.5-.563q2.35 0 3.925 1.575T22 8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.275.275-.637.4t-.713.125" /></svg>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col" type="card" id="P6" value="6">
-                    <div class="card h-100 p-0">
-                        <img src="../Images/P6.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold pe-5">Gigabyte Radeon RX9060 xt</h5>
-                            <div class="card-text d-flex justify-content-start align-items-center mb-2">
-                                <p class="card-text m-0">4.6</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" fill-opacity="0" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <p class="card-text m-0">(186 Reviews)</p>
-                            </div>
-                            <div class="card-text d-flex justify-content-between align-items-center mt-2s">
-                                <h5 class="card-price m-0">$869.00</h5>
-                                <div class="cart-heart d-flex">
-                                    <a class="nav-link" href="#" title="Cart">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
-                                            <path fill="currentColor" d="M2.5 2a.5.5 0 0 0 0 1h.246a.5.5 0 0 1 .48.363l1.586 5.55A1.5 1.5 0 0 0 6.254 10h4.569a1.5 1.5 0 0 0 1.393-.943l1.474-3.686A1 1 0 0 0 12.762 4H4.448l-.261-.912A1.5 1.5 0 0 0 2.746 2zm4 12a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m4 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3" /></svg>
-                                    </a>
-                                    <a class="nav-link" href="#" title="Favorite">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                            <path fill="currentColor" d="M12 20.325q-.35 0-.712-.125t-.638-.4l-1.725-1.575q-2.65-2.425-4.788-4.812T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.537t2.5-.563q2.35 0 3.925 1.575T22 8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.275.275-.637.4t-.713.125" /></svg>
+                                    <a class="nav-link " href="# " title="Favorite ">
+                                        <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 24 24 ">
+                                            <path fill="currentColor " d="M12 20.325q-.35 0-.712-.125t-.638-.4l-1.725-1.575q-2.65-2.425-4.788-4.812T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.537t2.5-.563q2.35 0 3.925 1.575T22
+                            8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.275.275-.637.4t-.713.125 " /></svg>
                                     </a>
                                 </div>
                             </div>
@@ -425,40 +384,47 @@
                     </div>
                 </div>
 
-                <div class="col" type="card" id="P7" value="7">
-                    <div class="card h-100 p-0">
-                        <img src="../Images/P7.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold pe-5">TUF Gamming Radeon RX9079 xt</h5>
-                            <div class="card-text d-flex justify-content-start align-items-center mb-2">
-                                <p class="card-text m-0">4.6</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" fill-opacity="0" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <p class="card-text m-0">(286 Reviews)</p>
+                <div class="col " type="button " id="P4 " id="card " value="4 ">
+                    <div class="card h-100 p-0 ">
+                        <img src="../Images/P4.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title fw-bold pe-5 ">ASUS ROG Astral GEFORCE NVIDIA RTX 5090 32GB GDDR7 Graphics Card</h5>
+                            <div class="card-text d-flex justify-content-start align-items-center mb-2 ">
+                                <p class="card-text m-0 ">4.8</p>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " fill-opacity="0 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <p class="card-text m-0 ">(256 Reviews)</p>
                             </div>
-                            <div class="card-text d-flex justify-content-between align-items-center mt-2s">
-                                <h5 class="card-price m-0">$899.00</h5>
-                                <div class="cart-heart d-flex">
-                                    <a class="nav-link" href="#" title="Cart">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
-                                            <path fill="currentColor" d="M2.5 2a.5.5 0 0 0 0 1h.246a.5.5 0 0 1 .48.363l1.586 5.55A1.5 1.5 0 0 0 6.254 10h4.569a1.5 1.5 0 0 0 1.393-.943l1.474-3.686A1 1 0 0 0 12.762 4H4.448l-.261-.912A1.5 1.5 0 0 0 2.746 2zm4 12a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m4 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3" /></svg>
+                            <div class="card-text d-flex justify-content-between align-items-center mt-2s ">
+                                <h5 class="card-price m-0 ">$4999.00</h5>
+                                <div class="cart-heart d-flex ">
+                                    <a class="nav-link " href="# " title="Cart ">
+                                        <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 16 16 ">
+                                            <path fill="currentColor " d="M2.5 2a.5.5 0 0 0 0 1h.246a.5.5 0 0 1 .48.363l1.586 5.55A1.5 1.5 0 0 0 6.254 10h4.569a1.5 1.5 0 0 0 1.393-.943l1.474-3.686A1 1 0 0 0 12.762 4H4.448l-.261-.912A1.5 1.5 0 0 0 2.746
+                            2zm4 12a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m4 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3 " /></svg>
                                     </a>
-                                    <a class="nav-link" href="#" title="Favorite">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                            <path fill="currentColor" d="M12 20.325q-.35 0-.712-.125t-.638-.4l-1.725-1.575q-2.65-2.425-4.788-4.812T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.537t2.5-.563q2.35 0 3.925 1.575T22 8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.275.275-.637.4t-.713.125" /></svg>
+                                    <a class="nav-link " href="# " title="Favorite ">
+                                        <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 24 24 ">
+                                            <path fill="currentColor " d="M12 20.325q-.35 0-.712-.125t-.638-.4l-1.725-1.575q-2.65-2.425-4.788-4.812T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.537t2.5-.563q2.35 0 3.925 1.575T22
+                            8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.275.275-.637.4t-.713.125 " /></svg>
                                     </a>
                                 </div>
                             </div>
@@ -466,40 +432,191 @@
                     </div>
                 </div>
 
-                <div class="col" type="button" id="P8" value="8">
-                    <div class="card h-100 p-0">
-                        <img src="../Images/P8.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title fw-bold pe-5">Intel Core​ Ultra 9 285K ( 24cores / Up to 5.7 GHz)</h5>
-                            <div class="card-text d-flex justify-content-start align-items-center mb-2">
-                                <p class="card-text m-0">4.5</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24">
-                                    <path fill="#ff9d00" fill-opacity="0" d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z" />
-                                    <path fill="none" stroke="#ff9d00" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28" /></svg>
-                                <p class="card-text m-0">(196 Reviews)</p>
+                <div class="col " type="card " id="P5 " value="5 ">
+                    <div class="card h-100 p-0 ">
+                        <img src="../Images/P5.jpg " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title fw-bold pe-5 ">Set PC Build</h5>
+                            <div class="card-text d-flex justify-content-start align-items-center mb-2 ">
+                                <p class="card-text m-0 ">4.5</p>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " fill-opacity="0 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <p class="card-text m-0 ">(156 Reviews)</p>
                             </div>
-                            <div class="card-text d-flex justify-content-between align-items-center mt-2s">
-                                <h5 class="card-price m-0">$869.00</h5>
-                                <div class="cart-heart d-flex">
-                                    <a class="nav-link" href="#" title="Cart">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16">
-                                            <path fill="currentColor" d="M2.5 2a.5.5 0 0 0 0 1h.246a.5.5 0 0 1 .48.363l1.586 5.55A1.5 1.5 0 0 0 6.254 10h4.569a1.5 1.5 0 0 0 1.393-.943l1.474-3.686A1 1 0 0 0 12.762 4H4.448l-.261-.912A1.5 1.5 0 0 0 2.746 2zm4 12a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m4 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3" /></svg>
+                            <div class="card-text d-flex justify-content-between align-items-center mt-2s ">
+                                <h5 class="card-price m-0 ">$2299.00</h5>
+                                <div class="cart-heart d-flex ">
+                                    <a class="nav-link " href="# " title="Cart ">
+                                        <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 16 16 ">
+                                            <path fill="currentColor " d="M2.5 2a.5.5 0 0 0 0 1h.246a.5.5 0 0 1 .48.363l1.586 5.55A1.5 1.5 0 0 0 6.254 10h4.569a1.5 1.5 0 0 0 1.393-.943l1.474-3.686A1 1 0 0 0 12.762 4H4.448l-.261-.912A1.5 1.5 0 0 0 2.746
+                            2zm4 12a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m4 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3 " /></svg>
                                     </a>
-                                    <a class="nav-link" href="#" title="Favorite">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                                            <path fill="currentColor" d="M12 20.325q-.35 0-.712-.125t-.638-.4l-1.725-1.575q-2.65-2.425-4.788-4.812T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.537t2.5-.563q2.35 0 3.925 1.575T22 8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.275.275-.637.4t-.713.125" /></svg>
+                                    <a class="nav-link " href="# " title="Favorite ">
+                                        <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 24 24 ">
+                                            <path fill="currentColor " d="M12 20.325q-.35 0-.712-.125t-.638-.4l-1.725-1.575q-2.65-2.425-4.788-4.812T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.537t2.5-.563q2.35 0 3.925 1.575T22
+                            8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.275.275-.637.4t-.713.125 " /></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col " type="card " id="P6 " value="6 ">
+                    <div class="card h-100 p-0 ">
+                        <img src="../Images/P6.png " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title fw-bold pe-5 ">Gigabyte Radeon RX9060 xt</h5>
+                            <div class="card-text d-flex justify-content-start align-items-center mb-2 ">
+                                <p class="card-text m-0 ">4.6</p>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " fill-opacity="0 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <p class="card-text m-0 ">(186 Reviews)</p>
+                            </div>
+                            <div class="card-text d-flex justify-content-between align-items-center mt-2s ">
+                                <h5 class="card-price m-0 ">$869.00</h5>
+                                <div class="cart-heart d-flex ">
+                                    <a class="nav-link " href="# " title="Cart ">
+                                        <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 16 16 ">
+                                            <path fill="currentColor " d="M2.5 2a.5.5 0 0 0 0 1h.246a.5.5 0 0 1 .48.363l1.586 5.55A1.5 1.5 0 0 0 6.254 10h4.569a1.5 1.5 0 0 0 1.393-.943l1.474-3.686A1 1 0 0 0 12.762 4H4.448l-.261-.912A1.5 1.5 0 0 0 2.746
+                            2zm4 12a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m4 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3 " /></svg>
+                                    </a>
+                                    <a class="nav-link " href="# " title="Favorite ">
+                                        <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 24 24 ">
+                                            <path fill="currentColor " d="M12 20.325q-.35 0-.712-.125t-.638-.4l-1.725-1.575q-2.65-2.425-4.788-4.812T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.537t2.5-.563q2.35 0 3.925 1.575T22
+                            8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.275.275-.637.4t-.713.125 " /></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col " type="card " id="P7 " value="7 ">
+                    <div class="card h-100 p-0 ">
+                        <img src="../Images/P7.jpg " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title fw-bold pe-5 ">TUF Gamming Radeon RX9079 xt</h5>
+                            <div class="card-text d-flex justify-content-start align-items-center mb-2 ">
+                                <p class="card-text m-0 ">4.6</p>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " fill-opacity="0 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <p class="card-text m-0 ">(286 Reviews)</p>
+                            </div>
+                            <div class="card-text d-flex justify-content-between align-items-center mt-2s ">
+                                <h5 class="card-price m-0 ">$899.00</h5>
+                                <div class="cart-heart d-flex ">
+                                    <a class="nav-link " href="# " title="Cart ">
+                                        <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 16 16 ">
+                                            <path fill="currentColor " d="M2.5 2a.5.5 0 0 0 0 1h.246a.5.5 0 0 1 .48.363l1.586 5.55A1.5 1.5 0 0 0 6.254 10h4.569a1.5 1.5 0 0 0 1.393-.943l1.474-3.686A1 1 0 0 0 12.762 4H4.448l-.261-.912A1.5 1.5 0 0 0 2.746
+                            2zm4 12a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m4 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3 " /></svg>
+                                    </a>
+                                    <a class="nav-link " href="# " title="Favorite ">
+                                        <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 24 24 ">
+                                            <path fill="currentColor " d="M12 20.325q-.35 0-.712-.125t-.638-.4l-1.725-1.575q-2.65-2.425-4.788-4.812T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.537t2.5-.563q2.35 0 3.925 1.575T22
+                            8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.275.275-.637.4t-.713.125 " /></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col " type="button " id="P8 " value="8 ">
+                    <div class="card h-100 p-0 ">
+                        <img src="../Images/P8.jpg " class="card-img-top " alt="... ">
+                        <div class="card-body ">
+                            <h5 class="card-title fw-bold pe-5 ">Intel Core​ Ultra 9 285K ( 24cores / Up to 5.7 GHz)</h5>
+                            <div class="card-text d-flex justify-content-start align-items-center mb-2 ">
+                                <p class="card-text m-0 ">4.5</p>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg " width="18 " height="18 " viewBox="0 0 24 24 ">
+                                    <path fill="#ff9d00 " fill-opacity="0 " d="M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29 -3.28l-5.29 3.28l1.49 -6.04l-4.76 -4.02l6.21 -0.46Z " />
+                                    <path fill="none " stroke="#ff9d00 " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 " d="M12 3l-2.35 5.76l-6.21 0.46l4.76 4.02l-1.49 6.04l5.29 -3.28M12 3l2.35 5.76l6.21 0.46l-4.76 4.02l1.49 6.04l-5.29
+                            -3.28 " /></svg>
+                                <p class="card-text m-0 ">(196 Reviews)</p>
+                            </div>
+                            <div class="card-text d-flex justify-content-between align-items-center mt-2s ">
+                                <h5 class="card-price m-0 ">$869.00</h5>
+                                <div class="cart-heart d-flex ">
+                                    <a class="nav-link " href="# " title="Cart ">
+                                        <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 16 16 ">
+                                            <path fill="currentColor " d="M2.5 2a.5.5 0 0 0 0 1h.246a.5.5 0 0 1 .48.363l1.586 5.55A1.5 1.5 0 0 0 6.254 10h4.569a1.5 1.5 0 0 0 1.393-.943l1.474-3.686A1 1 0 0 0 12.762 4H4.448l-.261-.912A1.5 1.5 0 0 0 2.746
+                            2zm4 12a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3m4 0a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3 " /></svg>
+                                    </a>
+                                    <a class="nav-link " href="# " title="Favorite ">
+                                        <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 24 24 ">
+                                            <path fill="currentColor " d="M12 20.325q-.35 0-.712-.125t-.638-.4l-1.725-1.575q-2.65-2.425-4.788-4.812T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.325 0 2.5.562t2 1.538q.825-.975 2-1.537t2.5-.563q2.35 0 3.925 1.575T22
+                            8.15q0 2.875-2.125 5.275T15.05 18.25l-1.7 1.55q-.275.275-.637.4t-.713.125 " /></svg>
                                     </a>
                                 </div>
                             </div>
@@ -509,54 +626,75 @@
             </div>
         </section>
     </main>
-    <main>
+    <footer>
         <div id="contact" class="contact bg-secondary text-white py-5">
-            <h2 class="text-center mb-4">Contact Us</h2>
-            <div class="d-flex justify-content-center align-items-center gap-4">
-                <a class="icon-link" href="mailto: ngelratanaa@gmail.com">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M20 18h-2V9.25L12 13L6 9.25V18H4V6h1.2l6.8 4.25L18.8 6H20m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2" /></svg>
+            <h2 class="text-center fw-bold mb-4">Contact Us</h2>
+            <div class="d-flex justify-content-center align-items-center gap-4 ">
+                <a class="icon-link " href="mailto: ngelratanaa@gmail.com ">
+                    <svg xmlns="http://www.w3.org/2000/svg " width="32 " height="32 " viewBox="0 0 24 24 ">
+                        <path fill="currentColor " d="M20 18h-2V9.25L12 13L6 9.25V18H4V6h1.2l6.8 4.25L18.8 6H20m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2 " /></svg>
                 </a>
-                <a class="icon-link" href="tel: +85581562108">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M9.004 3.416C8.432 2.606 7.64 2.241 6.8 2.25c-.797.008-1.573.349-2.221.803A6.2 6.2 0 0 0 2.92 4.79c-.41.649-.706 1.416-.666 2.165c.193 3.603 2.22 7.453 5.067 10.302c2.845 2.846 6.644 4.824 10.48 4.446c.752-.074 1.463-.457 2.044-.945a5.8 5.8 0 0 0 1.443-1.84c.34-.692.543-1.49.431-2.267c-.116-.81-.569-1.534-1.402-2.014a16 16 0 0 1-.512-.31c-.15-.093-.31-.194-.504-.31a7.5 7.5 0 0 0-1.249-.618c-.447-.163-.958-.27-1.49-.197c-.551.076-1.063.336-1.506.802c-.341.36-.843.472-1.549.268c-.718-.208-1.526-.724-2.228-1.422c-.702-.696-1.233-1.51-1.46-2.245c-.224-.728-.125-1.263.225-1.632c.473-.498.725-1.052.778-1.638c.052-.57-.09-1.106-.293-1.574c-.304-.699-.82-1.394-1.224-1.936a22 22 0 0 1-.3-.41" /></svg>
+                <a class="icon-link " href="tel: +85581562108 ">
+                    <svg xmlns="http://www.w3.org/2000/svg " width="32 " height="32 " viewBox="0 0 24 24 ">
+                        <path fill="currentColor " d="M9.004 3.416C8.432 2.606 7.64 2.241 6.8 2.25c-.797.008-1.573.349-2.221.803A6.2 6.2 0 0 0 2.92 4.79c-.41.649-.706 1.416-.666 2.165c.193 3.603 2.22 7.453 5.067 10.302c2.845 2.846 6.644 4.824 10.48
+                            4.446c.752-.074 1.463-.457 2.044-.945a5.8 5.8 0 0 0 1.443-1.84c.34-.692.543-1.49.431-2.267c-.116-.81-.569-1.534-1.402-2.014a16 16 0 0 1-.512-.31c-.15-.093-.31-.194-.504-.31a7.5 7.5 0 0 0-1.249-.618c-.447-.163-.958-.27-1.49-.197c-.551.076-1.063.336-1.506.802c-.341.36-.843.472-1.549.268c-.718-.208-1.526-.724-2.228-1.422c-.702-.696-1.233-1.51-1.46-2.245c-.224-.728-.125-1.263.225-1.632c.473-.498.725-1.052.778-1.638c.052-.57-.09-1.106-.293-1.574c-.304-.699-.82-1.394-1.224-1.936a22
+                            22 0 0 1-.3-.41 " /></svg>
                 </a>
-                <a class="icon-link" href="https://t.me/nna8x">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                        <g fill="none" fill-rule="evenodd">
-                            <path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02 0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z" />
-                            <path fill="currentColor" d="M19.777 4.43a1.5 1.5 0 0 1 2.062 1.626l-2.268 13.757c-.22 1.327-1.676 2.088-2.893 1.427c-1.018-.553-2.53-1.405-3.89-2.294c-.68-.445-2.763-1.87-2.507-2.884c.22-.867 3.72-4.125 5.72-6.062c.785-.761.427-1.2-.5-.5c-2.302 1.738-5.998 4.381-7.22 5.125c-1.078.656-1.64.768-2.312.656c-1.226-.204-2.363-.52-3.291-.905c-1.254-.52-1.193-2.244-.001-2.746z" />
+                <a class="icon-link " href="https://t.me/nna8x ">
+                    <svg xmlns="http://www.w3.org/2000/svg " width="32 " height="32 " viewBox="0 0 24 24 ">
+                        <g fill="none " fill-rule="evenodd ">
+                            <path d="m12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035q-.016-.005-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427q-.004-.016-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093q.019.005.029-.008l.004-.014l-.034-.614q-.005-.018-.02-.022m-.715.002a.02.02
+                            0 0 0-.027.006l-.006.014l-.034.614q.001.018.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z " />
+                            <path fill="currentColor " d="M19.777 4.43a1.5 1.5 0 0 1 2.062 1.626l-2.268 13.757c-.22 1.327-1.676 2.088-2.893 1.427c-1.018-.553-2.53-1.405-3.89-2.294c-.68-.445-2.763-1.87-2.507-2.884c.22-.867 3.72-4.125 5.72-6.062c.785-.761.427-1.2-.5-.5c-2.302
+                            1.738-5.998 4.381-7.22 5.125c-1.078.656-1.64.768-2.312.656c-1.226-.204-2.363-.52-3.291-.905c-1.254-.52-1.193-2.244-.001-2.746z " />
                         </g>
                     </svg>
                 </a>
-                <a class="icon-link" href="https://www.facebook.com/share/1D9RSLDdPy/?mibextid=wwXIfr">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z" /></svg>
+                <a class="icon-link " href="https://www.facebook.com/share/1D9RSLDdPy/?mibextid=wwXIfr ">
+                    <svg xmlns="http://www.w3.org/2000/svg " width="32 " height="32 " viewBox="0 0 24 24 ">
+                        <path fill="currentColor " d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z " /></svg>
                 </a>
-                <a class="icon-link" href="https://www.instagram.com/nnaatanaa?igsh=YjdzMG5ya2l0a2h6&utm_source=qr">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                        <circle cx="17" cy="7" r="1.5" fill="currentColor" />
-                        <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                            <path d="M16 3c2.76 0 5 2.24 5 5v8c0 2.76 -2.24 5 -5 5h-8c-2.76 0 -5 -2.24 -5 -5v-8c0 -2.76 2.24 -5 5 -5h4Z" />
-                            <path d="M12 8c2.21 0 4 1.79 4 4c0 2.21 -1.79 4 -4 4c-2.21 0 -4 -1.79 -4 -4c0 -2.21 1.79 -4 4 -4" />
+                <a class="icon-link " href="https://www.instagram.com/nnaatanaa?igsh=YjdzMG5ya2l0a2h6&utm_source=qr ">
+                    <svg xmlns="http://www.w3.org/2000/svg " width="32 " height="32 " viewBox="0 0 24 24 ">
+                        <circle cx="17 " cy="7 " r="1.5 " fill="currentColor " />
+                        <g fill="none " stroke="currentColor " stroke-linecap="round " stroke-linejoin="round " stroke-width="2 ">
+                            <path d="M16 3c2.76 0 5 2.24 5 5v8c0 2.76 -2.24 5 -5 5h-8c-2.76 0 -5 -2.24 -5 -5v-8c0 -2.76 2.24 -5 5 -5h4Z " />
+                            <path d="M12 8c2.21 0 4 1.79 4 4c0 2.21 -1.79 4 -4 4c-2.21 0 -4 -1.79 -4 -4c0 -2.21 1.79 -4 4 -4 " />
                         </g>
                     </svg>
                 </a>
-                <a class="icon-link" href="https://www.tiktok.com/@nnatana?is_from_webapp=1&sender_device=pc">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
-                        <path fill="currentColor" d="M16.6 5.82s.51.5 0 0A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6c0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64c0 3.33 2.76 5.7 5.69 5.7c3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48" /></svg>
+                <a class="icon-link " href="https://www.tiktok.com/@nnatana?is_from_webapp=1&sender_device=pc ">
+                    <svg xmlns="http://www.w3.org/2000/svg " width="32 " height="32 " viewBox="0 0 24 24 ">
+                        <path fill="currentColor " d="M16.6 5.82s.51.5 0 0A4.28 4.28 0 0 1 15.54 3h-3.09v12.4a2.59 2.59 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6c0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64c0 3.33 2.76 5.7 5.69 5.7c3.14
+                            0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48 " /></svg>
                 </a>
             </div>
+            <div class="row row-cols-md-2 g-2 p-5">
+                <div class="col-12 col-md-6">
+                    <h2 class="h4 text-dark fw-bold mb-3">AURA | Your Tech, Elevated.</h2>
+                    <p class="text-dark">We are your premier destination for the latest technology. From cutting-edge laptops and desktops to the newest smartphones, we supply the tools that power your life.</p>
+                    <p class="text-dark">Specializing in PC parts and accessories, we help enthusiasts build their dream machines with confidence. Quality products, expert advice, and a passion for innovation—that’s the AURA standard.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <h2 class="h4 text-dark fw-bold mb-3">Suggested Taglines (Slogans)</h2>
+                    <ul class="text-dark mb-3">
+                        <li>AURA: Power Your Potential.</li>
+                        <li>Tech for the Modern Era.</li>
+                        <li>Build. Play. Connect.</li>
+                        <li>The Heart of Your Setup.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </main>
+    </footer>
     <footer>
-        <div class="footer-content d-flex justify-content-center align-items-center bg-dark text-white px-5 py-3">
-            <p class="m-0">© 2024 PC Builder. All rights reserved.</p>
+        <div class="footer-content d-flex justify-content-center align-items-center bg-dark text-white px-5 py-3 ">
+            <p class="m-0 ">©2025 AURA. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/home/home_script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js "></script>
+    <script src="/home/home_script.js "></script>
 </body>
 
 </html>

@@ -113,16 +113,53 @@
                             <input type="text" class="form-control qty-input" value="1" readonly>
                             <button class="btn" type="button" onclick="increment(this)">+</button>
                         </div>
+
                     </div>
-                    <div class="col-md-6 col-8">
-                        <button class="btn btn-outline-secondary w-100" onclick="addToCart()">
-                        <i class="bi bi-bag-plus rounded-3 me-2"></i> Add to Cart
-                    </button>
+                    <div class="col-md-6 col-8 d-flex justify-content-between">
+                        <button type="button" class="btn-chat p-0 rounded-circle" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12a12 12 0 0 0 12-12A12 12 0 0 0 12 0M4.911 7.089h11.456a2.197 2.197 0 0 1 2.165 2.19v5.863a2.213 2.213 0 0 1-2.177 2.178H8.04c-1.174 0-2.04-.99-2.04-2.178v-4.639L4.503 7.905c-.31-.42-.05-.816.408-.816m3.415 2.19c-.347 0-.68.21-.68.544s.333.544.68.544h7.905c.346 0 .68-.21.68-.544s-.334-.545-.68-.545zm0 2.177c-.347 0-.68.21-.68.544s.333.544.68.544h7.905c.346 0 .68-.21.68-.544s-.334-.544-.68-.544zm-.013 2.19c-.346 0-.68.21-.68.544s.334.544.68.544h5.728c.347 0 .68-.21.68-.544s-.333-.545-.68-.545z"/></svg>
+                        </button>
+
+                        <button class="btn btn-outline-secondary w-75" onclick="addToCart()">
+                            <i class="bi bi-bag-plus rounded-3 me-2"></i> Add to Cart
+                        </button>
                     </div>
                     <div class="col-md-3">
                         <button class="btn-pay p-2 rounded-3 w-100" onclick="window.location.href='../payment/payment.html'">
                         Pay
                     </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Chat -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Messages</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body p-0">
+                        <div class="chat-history" id="chatHistory">
+                            <div class="message received">
+                                Hello! How can we help you today?
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <form id="chatForm" class="d-flex w-100 gap-2 align-items-center">
+                            <label for="fileInput" class="file-input-label">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="M9.414 3.05L4.085 8.38a3 3 0 0 0 4.243 4.242l2.403-2.403a.75.75 0 1 1 1.06 1.06l-2.403 2.404a4.5 4.5 0 0 1-6.364-6.364l5.33-5.33a3.25 3.25 0 0 1 4.596 4.597l-5.33 5.329a2 2 0 0 1-2.828-2.828l5.33-5.33a.75.75 0 0 1 1.06 1.061l-5.33 5.33a.5.5 0 1 0 .708.706l5.33-5.329A1.75 1.75 0 0 0 9.413 3.05Z" clip-rule="evenodd"/></svg>
+                            </label>
+                            <input type="file" id="fileInput">
+                            <input type="text" id="userInput" class="chat rounded-pill" placeholder="Type a message...">
+                            <a type="submit" class="send">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M3.402 6.673c-.26-2.334 2.143-4.048 4.266-3.042l11.944 5.658c2.288 1.083 2.288 4.339 0 5.422L7.668 20.37c-2.123 1.006-4.525-.708-4.266-3.042L3.882 13H12a1 1 0 1 0 0-2H3.883z" clip-rule="evenodd"/></svg>
+                            </a>
+                        </form>
                     </div>
                 </div>
             </div>

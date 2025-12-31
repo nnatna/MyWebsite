@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+:root {
+    --bg: #EDEDED;
+    --accent: #FF2D55;
+    --text: #000000;
+    --muted: rgba(0, 0, 0, 0.85);
+    --btn-hover: rgba(212, 6, 43, 0.993);
+    --fg-clr: #161616;
+    --bg-clr: #FFFFFF;
+    --bg-1-clr: #7C7C7C;
+    --bl-clr: #161616be;
+    --bg-2-clr: #EDEDED;
+    --y-clr: #FF9D00;
+    --yw-clr: #eff1c5e1;
+    --g-clr: #34C759;
+    --b-clr: #3700FF
+}
+
+* {
+    font-family: 'MyFont';
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    color: var(--text-dark);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 80px;
+}
+
+.fav-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fav-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.btn-remove {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+.btn-remove {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-remove:hover {
+    color: var(--accent);
+    transform: scale(1.1);
+}
+
+.object-fit-cover {
+    object-fit: cover;
+}
+
+.fade-out {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .fav-card {
+        height: 120px !important;
+        /* Fixed height for mobile list style */
+    }
+    .card-title {
+        font-size: 1rem;
+    }
+    .btn-sm {
+        font-size: 0.75rem;
+    }
+}

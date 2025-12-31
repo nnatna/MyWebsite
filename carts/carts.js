@@ -100,7 +100,6 @@ function checkout() {
         showToast("Please select at least one product.");
         return;
     }
-    // Redirect to payment page
     window.location.href = "../payment/payment.html";
 }
 
@@ -120,4 +119,49 @@ function showToast(msg) {
         setTimeout(() => toast.remove(), 500);
     }, 3000);
 }
-s
+
+function calculateGrandTotal() {
+    const allPrices = document.querySelectorAll('.item-total-price');
+    let grandTotal = 0;
+
+    allPrices.forEach(priceSpan => {
+        grandTotal += parseFloat(priceSpan.innerText.replace('$', ''));
+    });
+
+    const formattedTotal = grandTotal.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+    if (document.getElementById('total-price')) {
+        document.getElementById('total-price').innerText = formattedTotal;
+    }
+    if (document.getElementById('sub-total')) {
+        document.getElementById('sub-total').innerText = '$' + formattedTotal;
+    }
+
+    const mobilePrice = document.getElementById('mobile-total-price');
+    if (mobilePrice) {
+        mobilePrice.innerText = '$' + formattedTotal;
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    updateCount();
+    checkEmptyState();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const productCards = document.querySelectorAll('[id^="P"]');
+
+    productCards.forEach(card => {
+        card.addEventListener('click', function(e) {
+            if (e.target.closest('.cart-heart') || e.target.closest('a')) {
+                return;
+            }
+
+            const productId = card.id.replace('P', '');
+            window.location.href = `../Detail/Detail.html?id=${productId}`;
+        });
+
+
+        card.style.cursor = 'pointer';
+    });
+});
