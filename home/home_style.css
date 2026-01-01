@@ -260,6 +260,10 @@ button {
     .icon-link {
         padding: 5px;
     }
+    .icon-link svg {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 @media (max-width: 768px) {

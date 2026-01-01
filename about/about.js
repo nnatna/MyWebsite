@@ -5,7 +5,6 @@ fetch("../nav/nav.html")
     });
 
 document.addEventListener('DOMContentLoaded', function() {
-    // simple behavior hook for About page; ready for future enhancements
     const hero = document.querySelector('.about-hero');
     if (hero) {
         hero.addEventListener('click', function() {
