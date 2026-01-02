@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'MyFont';
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+:root {
+    --bg: #EDEDED;
+    --accent: #FF2D55;
+    --text: #000000;
+    --muted: rgba(0, 0, 0, 0.85);
+    --btn-hover: rgba(212, 6, 43, 0.993);
+    --fg-clr: #161616;
+    --bg-clr: #FFFFFF;
+    --bg-1-clr: #7C7C7C;
+    --bl-clr: #161616be;
+    --bg-2-clr: #EDEDED;
+    --y-clr: #FF9D00;
+    --yw-clr: #eff1c5e1;
+    --g-clr: #34C759;
+    --b-clr: #3700FF
+}
+
+* {
+    font-family: 'MyFont';
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    color: var(--text-dark);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    padding-bottom: 80px;
+}
+
+.fav-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fav-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.receipt-card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.status-badge {
+    background-color: #fef3c7;
+    color: #92400e;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.status-dot {
+    height: 8px;
+    width: 8px;
+    background-color: var(--pending-color);
+    border-radius: 50%;
+    margin-right: 8px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(245, 158, 11, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
+    }
+}
+
+#map {
+    height: 450px;
+    width: 100%;
+    border-radius: 0.75rem;
+    z-index: 1;
+}
+
+.item-list {
+    border-top: 1px dashed #e2e8f0;
+    padding-top: 1.5rem;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 5px;
+    bottom: 5px;
+    width: 2px;
+    background: #e2e8f0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    left: -29px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #cbd5e1;
+    border: 2px solid white;
+}
+
+.timeline-item.active::after {
+    background: var(--primary-color);
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 20px;
+    border: 1px solid var(--bg-1-clr);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .fav-card {
+        height: 120px !important;
+    }
+    .card-title {
+        font-size: 1rem;
+    }
+    .btn-sm {
+        font-size: 0.75rem;
+    }
+}

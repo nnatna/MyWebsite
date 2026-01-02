@@ -294,4 +294,24 @@ button {
     .navbar-link {
         padding: 15px;
     }
+    .card-title {
+        font-size: 1rem;
+    }
+    .btn-sm {
+        font-size: 0.75rem;
+    }
+    .card-price {
+        font-size: 1rem;
+    }
+    .cart-heart {
+        gap: 5px;
+    }
+    .cart-heart a {
+        width: 25px;
+        height: 25px;
+    }
+    .card-text {
+        font-size: 0.85rem;
+        padding-right: 0 !important;
+    }
 }
